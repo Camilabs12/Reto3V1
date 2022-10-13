@@ -32,5 +32,9 @@ public class MessageRepositorio {
     public Message save(Message message){
         return messageCrudRepository.save(message);
     }
+
+    public void delete(Message message) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

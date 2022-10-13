@@ -31,4 +31,8 @@ public class GamaRepositorio {
     public Gama save(Gama gama){
         return gamaCrudRepository.save(gama);
     }
+
+    public void delete(Gama gama) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
