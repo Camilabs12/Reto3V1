@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/Gama")
 
 public class GamaControlador {
-    @Autowired
+     @Autowired
     private GamaServicio gamaService;
     @GetMapping("/all")
     public List<Gama> getGamas(){
@@ -46,7 +46,7 @@ public class GamaControlador {
         return gamaService.save(gama);
     }
     
-    @PutMapping("/update")
+     @PutMapping("/update")
     @ResponseStatus(HttpStatus.CREATED)
     public Gama update(@RequestBody Gama gama) {
         return gamaService.update(gama);

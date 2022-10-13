@@ -32,7 +32,7 @@ public class CarRepositorio {
         return carCrudRepository.save(car);
     }
 
-    public void delete(Car car) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void delete (Car car){
+        carCrudRepository.delete(car);
+    } 
 }
